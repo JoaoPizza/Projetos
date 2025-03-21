@@ -1,0 +1,25 @@
+<html>
+    <link rel="stylesheet" href="ex2.css">
+    <head>
+
+    </head>
+    <body>
+        <h1>Testando Números Primos</h1>
+        <button onclick="clic()">Clique aqui para começar!</button>
+    </body>
+    <script>
+        function clic(){
+            let nm = prompt('Digite uma número:')
+            let numero = parseInt(nm)
+            var divisores=0;
+
+            for(var count=1 ; count<=numero; count++)
+                if(numero % count == 0)
+   	            divisores++;
+            if(divisores==2)
+  	            alert('É primo');
+            else
+  	            alert('Não é primo')
+        }
+    </script>
+</html>

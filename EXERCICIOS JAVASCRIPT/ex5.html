@@ -1,0 +1,32 @@
+<html>
+    <link rel="stylesheet" href="ex2.css">
+    <head>
+
+    </head>
+    <body>
+        <h1>Média Aritmética de Números</h1>
+        <button onclick="clic()">Clique para começar!</button>
+    </body>
+    <script>
+        var dados = []
+        function clic(){
+            let qtd = prompt("Digite quantos números deseja fazer a média:")
+            let cont = 0
+            while(cont<qtd){
+                cont++
+                let nume = parseInt(prompt("Digite um número:"))
+                
+                dados.push(nume);
+                var soma = 0;
+
+                for (var i = 0; i < dados.length; i++) {
+                 soma += dados[i];
+                }
+            var fin = soma/qtd
+            }
+            
+            alert("A Média Aritmética dos números digitados é "+fin)
+        }
+        
+    </script>
+</html>
